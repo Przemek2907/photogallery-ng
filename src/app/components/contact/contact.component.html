@@ -1,0 +1,35 @@
+<p>contact works!</p>
+<div style="display: flex; flex-direction: row;">
+  <div style="display: flex; flex-direction: column; width: 600px">
+  </div>
+  <mat-divider [vertical]="true" style="margin: 30px"></mat-divider>
+  <div style="width: 600px">
+    <span>ZAPLANUJ WYDARZENIE</span>
+    <form class="example-form" style="display: flex; flex-direction: column;">
+      <mat-form-field class="example-full-width">
+        <mat-label>Imię i nazwisko</mat-label>
+        <input matInput placeholder="Jan Kowalski">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Numer telefonu</mat-label>
+        <input matInput placeholder="Ex. Pizza">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Adres email</mat-label>
+        <input matInput placeholder="Ex. Pizza">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Data wydarzenia</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Wiadomość</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="accent">Wyślij wiadomość</button>
+    </form>
+
+  </div>
+</div>
