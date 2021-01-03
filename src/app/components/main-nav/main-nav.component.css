@@ -13,8 +13,8 @@
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
-  z-index: 1;
-  background-color: crimson;
+  z-index: 2;
+  background-color: transparent;
 }
 
 .spacer {
@@ -23,12 +23,19 @@
 
 .page-link {
   text-decoration: none;
-  color: aliceblue;
+  text-transform: uppercase;
+  color: #3c3a3a;
+  font-family: "Arvo", sans-serif;
+  text-shadow: #5a5353;
+  font-weight: 600;
   margin: auto 10px;
 }
 
-@media (min-width: 760px) {
-  .sidenav {
-    display: none;
-  }
+
+.landing-menu {
+  font-size: 28px;
+  letter-spacing: 2px;
 }
+
+
+

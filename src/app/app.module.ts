@@ -14,11 +14,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { ContactComponent } from './components/contact/contact.component';
+import { PricingComponent } from './components/pricing/pricing.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { SingleAlbumComponent } from './components/portfolio/single-album/single-album.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 const routes: Routes = [
-  // { path: 'demo', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)},
-  { path: '**', redirectTo: 'main'},
-  { path: 'main', component: MainDisplayComponent}
+  { path: '', component: HeroComponent},
+  { path: 'contact', component: ContactComponent},
+  { path: 'about', component: AboutMeComponent},
+  { path: 'portfolio', component: PortfolioComponent},
 ];
 
 @NgModule({
@@ -26,6 +33,12 @@ const routes: Routes = [
     AppComponent,
     MainDisplayComponent,
     MainNavComponent,
+    ContactComponent,
+    PricingComponent,
+    AboutMeComponent,
+    PortfolioComponent,
+    SingleAlbumComponent,
+    HeroComponent,
   ],
   imports: [
     BrowserModule,

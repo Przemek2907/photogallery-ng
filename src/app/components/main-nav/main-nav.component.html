@@ -5,29 +5,35 @@
       opened = "false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Galeria</a>
-      <a mat-list-item href="#">O mnie</a>
-      <a mat-list-item href="#">Kontakt</a>
+      <a mat-list-item routerLink="/portfolio">Portfolio</a>
+      <a mat-list-item routerLink="/portfolio">Oferta</a>
+      <a mat-list-item routerLink="/about">O mnie</a>
+      <a mat-list-item routerLink="/contact">Kontakt</a>
     </mat-nav-list>
+    <div style="margin-left: 20px">
+      <mat-icon>facebook</mat-icon>
+      <mat-icon>gmail</mat-icon>
+    </div>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary" class="">
+    <mat-toolbar color="primary" class="landing-menu">
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <mat-icon aria-label="Side nav toggle icon" style="color: #454242">menu</mat-icon>
       </button>
-      <span>OKISTUDIO</span>
+      <a class="page-link" routerLink="/">OKISTUDIO - LOGO</a>
       <span class="spacer"></span>
       <div *ngIf="(isHandset$ | async) === false">
-        <a class="page-link" href="#">Galeria</a>
-        <a class="page-link" href="#">O mnie</a>
-        <a class="page-link" href="#">Kontakt</a>
+        <a class="page-link" routerLink="/portfolio">Portfolio</a>
+        <a class="page-link" routerLink="/pricing">Oferta</a>
+        <a class="page-link" routerLink="/about">O mnie</a>
+        <a class="page-link" routerLink="/contact">Kontakt</a>
       </div>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
