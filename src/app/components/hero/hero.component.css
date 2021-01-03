@@ -12,9 +12,9 @@ img {
 
 .get-in-touch {
   position: absolute;
-  top: 85%;
+  top: 80%;
   right: 5%;
-  transform: translate(2%, -80%);
+  transform: translate(2%, -90%);
   font-size: 4rem;
   z-index: 2;
   display: flex;
@@ -50,6 +50,17 @@ img {
 @media (max-width: 760px) {
   .intro-text {
     font-size: 1.5rem;
+  }
+
+  .get-in-touch {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    transform: translate(2%, -60%);
+    font-size: 4rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
   }
 }
 
