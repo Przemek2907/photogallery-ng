@@ -3,7 +3,7 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       opened = "false">
-    <mat-toolbar>OKISTUDIO - LOGO</mat-toolbar>
+    <mat-toolbar>OKISTUDIO-LOGO</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="/portfolio" class="page-link">Portfolio</a>
       <a mat-list-item routerLink="/portfolio" class="page-link">Oferta</a>
@@ -26,7 +26,7 @@
         <mat-icon aria-label="Side nav toggle icon" style="color: #454242; line-height: 1">menu</mat-icon>
       </button>
       <div>
-        <a class="page-link" routerLink="/">OKISTUDIO - LOGO</a>
+        <a class="page-link" routerLink="/">OKISTUDIO-LOGO</a>
       </div>
       <span class="spacer"></span>
       <div *ngIf="(isHandset$ | async) === false">
