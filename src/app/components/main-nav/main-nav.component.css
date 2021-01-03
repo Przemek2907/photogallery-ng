@@ -17,6 +17,10 @@
   background-color: transparent;
 }
 
+.materialized {
+  background-color: dimgrey;
+}
+
 .spacer {
   flex: 1 1 auto;
 }
@@ -25,10 +29,10 @@
   text-decoration: none;
   text-transform: uppercase;
   color: black;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   line-height: 1;
   text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.4);
-  font-weight: 600;
+  font-weight: 700;
   margin: auto 10px;
 }
 

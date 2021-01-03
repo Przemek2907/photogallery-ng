@@ -6,12 +6,13 @@ img {
   width: 100%;
   z-index: 0;
   object-fit: cover;
-  opacity: 0.3;
+  opacity: 0.7;
+  filter: grayscale(100%);
 }
 
 .get-in-touch {
   position: absolute;
-  top: 50%;
+  top: 85%;
   right: 5%;
   transform: translate(2%, -80%);
   font-size: 4rem;
@@ -22,9 +23,9 @@ img {
 
 .business-card {
   /*color: #151312;*/
-  color: white;
+  color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Arya', sans-serif;
 }
 
 .intro {
@@ -51,7 +52,6 @@ img {
     font-size: 1.5rem;
   }
 }
-
 
 .slider {
   background: #bcacac;
