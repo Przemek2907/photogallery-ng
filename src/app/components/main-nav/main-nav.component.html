@@ -15,18 +15,19 @@
       <mat-icon>gmail</mat-icon>
     </div>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary" class="landing-menu" [class.materialized]="navbarTransparent">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon" style="color: #454242; line-height: 1">menu</mat-icon>
-      </button>
-      <div>
+  <mat-sidenav-content (scroll)="onScroll($event)">
+    <mat-toolbar color="primary" class="landing-menu" id="mainToolbar">
+      <div style="display: flex; justify-content: space-between">
         <a class="page-link" routerLink="/">OKISTUDIO-LOGO</a>
+        <span class="spacer"></span>
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon" style="color: #454242; line-height: 1">menu</mat-icon>
+        </button>
       </div>
       <span class="spacer"></span>
       <div *ngIf="(isHandset$ | async) === false">
