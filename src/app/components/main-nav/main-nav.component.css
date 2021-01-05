@@ -42,5 +42,12 @@
   letter-spacing: 2px;
 }
 
+.logo {
+  width: 32px;
+  height: auto;
+  color: black;
+  text-align: center;
+}
+
 
 
